@@ -3,7 +3,8 @@
 
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
     <title>Lab2_web</title>
     <link rel="icon" type="image/x-icon" href="public/favicon.ico">
     <link href="styles/style.css" rel="stylesheet"/>
