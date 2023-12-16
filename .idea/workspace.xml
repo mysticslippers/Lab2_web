@@ -10,16 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f882b485-adc2-47a4-9cc5-002f5e70e340" name="Changes" comment="half work">
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/styles/result.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/ifmo/controller/ControllerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/ifmo/controller/ControllerServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/ifmo/model/AreaCheckServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/ifmo/model/AreaCheckServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/scripts/addResultToTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/scripts/addResultToTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/scripts/handleRequest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/scripts/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/scripts/validate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/styles/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +173,7 @@
       <workItem from="1701418791918" duration="8485000" />
       <workItem from="1701512719517" duration="1192000" />
       <workItem from="1702708816258" duration="605000" />
-      <workItem from="1702713743534" duration="10075000" />
+      <workItem from="1702713743534" duration="12574000" />
     </task>
     <task id="LOCAL-00001" summary="half work">
       <created>1700472142192</created>
@@ -198,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701414150782</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="half work">
+      <created>1702739474277</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702739474277</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

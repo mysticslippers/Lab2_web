@@ -1,6 +1,5 @@
 package me.ifmo.model;
 
-import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -19,7 +18,7 @@ public class AreaCheckServlet extends HttpServlet{
     private final Pattern pattern = Pattern.compile("^([-+]?\\d+[.]?\\d{0,15})$");
 
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         HttpSession session = request.getSession();
         long startTime = System.nanoTime();
         LinkedList<String> hits = (LinkedList<String>) session.getAttribute("hits");
