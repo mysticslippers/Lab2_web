@@ -1,5 +1,5 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="utf-8" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page import="java.util.LinkedList" %>
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" language="java" %>
 
 <html lang="en">
 <head>
@@ -7,15 +7,16 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
     <title>Lab2_web</title>
     <link rel="icon" type="image/x-icon" href="public/favicon.ico">
-    <link href="styles/style.css" rel="stylesheet"/>
+    <link href="styles/index.css" rel="stylesheet"/>
     <script src="js/scripts/draw.js" type="application/javascript"></script>
-    <script src="js/scripts/handleRequest.js" type="text/javascript"></script>
     <script src="js/scripts/clean.js" type="text/javascript"></script>
-    <script src="js/scripts/changeGIF.js" type="text/javascript"></script>
+    <script src="js/scripts/handleRequest.js" type="text/javascript"></script>
+    <script src="js/scripts/addResultToTable.js" type="text/javascript"></script>
     <script defer src="js/scripts/validate.js"></script>
 </head>
 
 <body onload="draw()">
+
 <!--Заголовок-->
 <header class="header" id="header-id">
     <div class="presentation" id="presentation-id">
@@ -35,7 +36,7 @@
     </div>
     <!--Форма-->
     <div class="data" id="data-id">
-        <form class="data-form" id="data-form-id" name="data-input-form" onsubmit="validate(this)">
+        <form class="data-form" id="data-form-id" name="data-input-form" onsubmit="validate(this)" action="${pageContext.request.contextPath}/Lab2_web/controller" method="get">
             <div class="x-input-form" id="x-input-form-id">
                 <p>Введите координату X:</p>
                 <label class="x-input-label" for="x-input-choice">
@@ -75,9 +76,6 @@
         </div>
     </div>
 
-    <!--Блок с гифками-->
-    <div class="gif-block" id="gif-block-id"></div>
-
     <!--Таблица с результатами-->
     <div class="result-table" id="result-table-id">
         <table class="table" id="table-id">
@@ -90,10 +88,18 @@
                 <th>Время выполнения скрипта</th>
             </tr>
             </thead>
-            <tbody class="tbody" id="tbody-id"></tbody>
+            <tbody class="tbody" id="tbody-id">
+            </tbody>
         </table>
     </div>
-    <script src="js/scripts/addResultToTable.js"></script>
+    <script>
+        const results = <%=(LinkedList<String>) session.getAttribute("hits")%>
+        if(results && results.length > 0){
+            results.forEach(function (result){
+                addResultToTable(result);
+            });
+        }
+    </script>
 </main>
 
 <footer class="footer" id="footer-id"></footer>

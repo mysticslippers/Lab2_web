@@ -23,7 +23,7 @@ public class ControllerServlet extends HttpServlet{
 
 
         if(mode == null){
-            if(session.getAttribute("result") == null) session.setAttribute("result", new LinkedList<String>());
+            if(session.getAttribute("result") == null) session.setAttribute("hits", new LinkedList<String>());
             if(xRaw != null && yRaw != null && rRaw != null){
                 session.setAttribute("x-input", xRaw);
                 session.setAttribute("y-input", yRaw);

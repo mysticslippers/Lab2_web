@@ -124,18 +124,6 @@
     top: 250px;
 }
 
-#gif-block-id {
-    margin: auto;
-    position: absolute;
-    height: 300px;
-    width: 422px;
-    left: 505px;
-    top: 700px;
-    border: 5px black solid;
-    background: url("../public/another.gif") no-repeat scroll 8% 40%;
-    border-radius: 10px;
-}
-
 .result-table {
     left: 950px;
     top: 210px;
