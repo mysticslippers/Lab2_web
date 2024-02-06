@@ -10,7 +10,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f882b485-adc2-47a4-9cc5-002f5e70e340" name="Changes" comment="half work">
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/ifmo/filter/AreaCheckFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/ifmo/model/UserPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/scripts/drawDot.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/scripts/drawGraph.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/scripts/handleClickGraph.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/scripts/redrawGraph.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/result.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/ifmo/controller/ControllerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/ifmo/controller/ControllerServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/ifmo/model/AreaCheckServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/ifmo/model/AreaCheckServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/scripts/addResultToTable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/scripts/changeGIF.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/scripts/clean.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/scripts/clean.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/scripts/draw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/scripts/handleRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/scripts/handleRequest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/scripts/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/scripts/validate.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,26 +63,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/zavoe/IdeaProjects/Lab2_web/src/main/webapp/js/scripts&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.web.browsers&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/zavoe/IdeaProjects/N_Lab2_web",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\zavoe\IdeaProjects\Lab2_web\src\main\webapp\js\scripts" />
+      <recent name="C:\Users\zavoe\IdeaProjects\Lab2_web\src\main\webapp" />
+      <recent name="C:\Users\zavoe\IdeaProjects\Lab2_web\src\main\webapp\js" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="me.ifmo.filter" />
+      <recent name="me.ifmo.model" />
     </key>
   </component>
   <component name="RunManager">
@@ -141,16 +163,14 @@
         </option>
       </method>
     </configuration>
-    <configuration default="true" type="JBossConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <deployment />
-      <server-settings>
-        <option name="SERVER" value="" />
-        <option name="BINDING_SET_NAME" value="" />
-        <option name="DOMAIN" value="false" />
-        <option name="SERVER_GROUP" value="" />
-        <option name="USERNAME" value="" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="JBoss" />
+      <server-settings />
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -173,7 +193,14 @@
       <workItem from="1701418791918" duration="8485000" />
       <workItem from="1701512719517" duration="1192000" />
       <workItem from="1702708816258" duration="605000" />
-      <workItem from="1702713743534" duration="12574000" />
+      <workItem from="1702713743534" duration="19714000" />
+      <workItem from="1702785135759" duration="3989000" />
+      <workItem from="1702793924858" duration="2289000" />
+      <workItem from="1707128492069" duration="19000" />
+      <workItem from="1707130524024" duration="694000" />
+      <workItem from="1707131255926" duration="4346000" />
+      <workItem from="1707172789648" duration="3208000" />
+      <workItem from="1707203721916" duration="8659000" />
     </task>
     <task id="LOCAL-00001" summary="half work">
       <created>1700472142192</created>
@@ -196,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702739474277</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="half work">
+      <created>1702739505614</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702739505614</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

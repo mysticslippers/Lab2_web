@@ -1,4 +1,5 @@
 <%@ page import="java.util.LinkedList" %>
+<%@ page import="me.ifmo.model.UserPoint" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" language="java" %>
 
 <html lang="en">
@@ -8,14 +9,11 @@
     <title>Lab2_web</title>
     <link rel="icon" type="image/x-icon" href="public/favicon.ico">
     <link href="styles/index.css" rel="stylesheet"/>
-    <script src="js/scripts/draw.js" type="application/javascript"></script>
-    <script src="js/scripts/clean.js" type="text/javascript"></script>
-    <script src="js/scripts/handleRequest.js" type="text/javascript"></script>
-    <script src="js/scripts/addResultToTable.js" type="text/javascript"></script>
-    <script defer src="js/scripts/validate.js"></script>
+    <script src="js/scripts/drawGraph.js" type="application/javascript"></script>
+    <script defer src="js/scripts/validate.js" type="text/javascript"></script>
 </head>
 
-<body onload="draw()">
+<body onload="drawGraph(null)">
 
 <!--Заголовок-->
 <header class="header" id="header-id">
@@ -34,9 +32,10 @@
     <div class="coordinate-plane" id="coordinate-plane-id">
         <canvas id="canvas" height="400px" width="400px"></canvas>
     </div>
+
     <!--Форма-->
     <div class="data" id="data-id">
-        <form class="data-form" id="data-form-id" name="data-input-form" onsubmit="validate(this)" action="${pageContext.request.contextPath}/Lab2_web/controller" method="get">
+        <form class="data-form" id="data-form-id" name="data-input-form" onsubmit="validate(this)">
             <div class="x-input-form" id="x-input-form-id">
                 <p>Введите координату X:</p>
                 <label class="x-input-label" for="x-input-choice">
@@ -68,7 +67,7 @@
         <br/>
 
         <div class="clear-data-table" id="clear-data-table-id">
-            <button class="button-clear-data" id="button-clear-data-id">
+            <button class="button-clear-data" id="button-clear-data-id" onclick="clean()">
                 <span class="text-button-clear-data" id="text-button-clear-data-id">
                     Очистить таблицу!
                 </span>
@@ -89,19 +88,45 @@
             </tr>
             </thead>
             <tbody class="tbody" id="tbody-id">
+            <%
+                LinkedList<UserPoint> results = (LinkedList<UserPoint>) request.getSession().getAttribute("results");
+                if(results != null){
+            %>
+            <%      for(UserPoint userPoint : results){ %>
+            <tr>
+                <td>
+                    <%= userPoint.getX()%>
+                </td>
+                <td>
+                    <%= userPoint.getY()%>
+                </td>
+                <td>
+                    <%= userPoint.getR()%>
+                </td>
+                <td>
+                    <%= userPoint.getHit()%>
+                </td>
+                <td>
+                    <%= userPoint.getExecuteTime()%>
+                </td>
+            </tr>
+            <%
+                    }
+                }
+            %>
             </tbody>
         </table>
     </div>
-    <script>
-        const results = <%=(LinkedList<String>) session.getAttribute("hits")%>
-        if(results && results.length > 0){
-            results.forEach(function (result){
-                addResultToTable(result);
-            });
-        }
-    </script>
 </main>
 
-<footer class="footer" id="footer-id"></footer>
+<!--Низ-->
+<footer class="footer" id="footer-id">
+    <div class="copyright" id="copyright-id">
+    </div>
+</footer>
+<script src="js/scripts/clean.js" type="text/javascript"></script>
+<script src="js/scripts/redrawGraph.js" type="text/javascript"></script>
+<script src="js/scripts/handleRequest.js" type="text/javascript"></script>
+<script src="js/scripts/drawDot.js" type="text/javascript"></script>
 </body>
 </html>

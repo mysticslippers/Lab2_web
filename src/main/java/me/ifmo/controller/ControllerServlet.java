@@ -15,6 +15,7 @@ public class ControllerServlet extends HttpServlet{
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String path = getServletContext().getContextPath();
         HttpSession session = request.getSession();
+        session.setAttribute("filter", true);
 
         String xRaw = request.getParameter("x-input");
         String yRaw = request.getParameter("y-input");
@@ -23,7 +24,7 @@ public class ControllerServlet extends HttpServlet{
 
 
         if(mode == null){
-            if(session.getAttribute("result") == null) session.setAttribute("hits", new LinkedList<String>());
+            if(session.getAttribute("results") == null) session.setAttribute("results", new LinkedList<String>());
             if(xRaw != null && yRaw != null && rRaw != null){
                 session.setAttribute("x-input", xRaw);
                 session.setAttribute("y-input", yRaw);

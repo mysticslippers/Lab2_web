@@ -1,7 +1,10 @@
-function draw(){
+function drawGraph(r){
     const canvas = document.getElementById("canvas");
     const ctx = canvas.getContext("2d");
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
     const step = 50;
+    let rValue = (r !== null) ? r : "R";
+    let rHalfValue = (r !== null) ? r / 2 : "R / 2";
 
     {   //ctx config for parts
         ctx.strokeStyle = "#00BFFF";
@@ -10,7 +13,7 @@ function draw(){
 
     {   //left-top part
         ctx.beginPath();
-        ctx.arc(canvas.width / 2, canvas.height / 2, 2 * step, Math.PI, -Math.PI / 2);
+        ctx.arc(canvas.width / 2, canvas.height / 2, 2 * step, -Math.PI, -Math.PI / 2);
         ctx.lineTo(canvas.width / 2, canvas.height / 2);
         ctx.lineTo(2 * step, canvas.height / 2);
         ctx.stroke();
@@ -30,10 +33,10 @@ function draw(){
 
     {   //right-bottom part
         ctx.beginPath();
-        ctx.moveTo(5 * step, canvas.height / 2);
+        ctx.moveTo(canvas.width / 2, canvas.height / 2);
+        ctx.lineTo(5 * step, canvas.height / 2);
         ctx.lineTo(canvas.width / 2, 5 * step);
         ctx.lineTo(canvas.width / 2, canvas.height / 2);
-        ctx.lineTo(2 * step, canvas.height / 2);
         ctx.stroke();
         ctx.fill();
     }
@@ -73,16 +76,16 @@ function draw(){
         ctx.beginPath();
         ctx.moveTo(2 * step, canvas.height / 2 - 5);
         ctx.lineTo(2 * step, canvas.height / 2 + 5);
-        ctx.fillText("-R", 2 * step, canvas.height / 2 + 20);
+        ctx.fillText("-" + rValue, 2 * step, canvas.height / 2 + 20);
         ctx.moveTo(3 * step, canvas.height / 2 - 5);
         ctx.lineTo(3 * step, canvas.height / 2 + 5);
-        ctx.fillText("-R / 2", 3 * step, canvas.height / 2 + 20);
+        ctx.fillText("-" + rHalfValue, 3 * step, canvas.height / 2 + 20);
         ctx.moveTo(5 * step, canvas.height / 2 - 5);
         ctx.lineTo(5 * step, canvas.height / 2 + 5);
-        ctx.fillText("R / 2", 5 * step, canvas.height / 2 - 20);
+        ctx.fillText(rHalfValue, 5 * step, canvas.height / 2 + 20);
         ctx.moveTo(6 * step, canvas.height / 2 - 5);
         ctx.lineTo(6 * step, canvas.height / 2 + 5);
-        ctx.fillText("R", 6 * step, canvas.height / 2 - 20);
+        ctx.fillText(rValue, 6 * step, canvas.height / 2 + 20);
         ctx.stroke();
     }
 
@@ -90,16 +93,16 @@ function draw(){
         ctx.beginPath();
         ctx.moveTo(canvas.width / 2 - 5, 2 * step);
         ctx.lineTo(canvas.width / 2 + 5, 2 * step);
-        ctx.fillText("R", canvas.width / 2 - 30, 2 * step);
+        ctx.fillText(rValue, canvas.width / 2 + 30, 2 * step);
         ctx.moveTo(canvas.width / 2 - 5, 3 * step);
         ctx.lineTo(canvas.width / 2 + 5, 3 * step);
-        ctx.fillText("R / 2", canvas.width / 2 - 30, 3 * step);
+        ctx.fillText(rHalfValue, canvas.width / 2 + 30, 3 * step);
         ctx.moveTo(canvas.width / 2 - 5, 5 * step);
         ctx.lineTo(canvas.width / 2 + 5, 5 * step);
-        ctx.fillText("-R / 2", canvas.width / 2 + 30, 5 * step);
+        ctx.fillText("-" + rHalfValue, canvas.width / 2 + 30, 5 * step);
         ctx.moveTo(canvas.width / 2 - 5, 6 * step);
         ctx.lineTo(canvas.width / 2 + 5, 6 * step);
-        ctx.fillText("-R", canvas.width / 2 + 30, 6 * step);
+        ctx.fillText("-" + rValue, canvas.width / 2 + 30, 6 * step);
         ctx.stroke();
     }
 }
