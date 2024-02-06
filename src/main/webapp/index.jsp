@@ -9,6 +9,9 @@
     <title>Lab2_web</title>
     <link rel="icon" type="image/x-icon" href="public/favicon.ico">
     <link href="styles/index.css" rel="stylesheet"/>
+    <script src="js/scripts/handleRequest.js" type="text/javascript"></script>
+    <script src="js/scripts/clean.js" type="text/javascript"></script>
+    <script src="js/scripts/drawDot.js" type="text/javascript"></script>
     <script src="js/scripts/drawGraph.js" type="application/javascript"></script>
     <script defer src="js/scripts/validate.js" type="text/javascript"></script>
 </head>
@@ -124,9 +127,7 @@
     <div class="copyright" id="copyright-id">
     </div>
 </footer>
-<script src="js/scripts/clean.js" type="text/javascript"></script>
 <script src="js/scripts/redrawGraph.js" type="text/javascript"></script>
-<script src="js/scripts/handleRequest.js" type="text/javascript"></script>
-<script src="js/scripts/drawDot.js" type="text/javascript"></script>
+<script src="js/scripts/manageDots.js" type="text/javascript"></script>
 </body>
 </html>

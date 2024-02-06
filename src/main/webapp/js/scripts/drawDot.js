@@ -4,7 +4,7 @@ function drawDot(x, y, r, result){
     const step = 20;
 
     {   //ctx config for dots
-        ctx.fillStyle = (result === "Попал!" && result !== "Not Valid!") ? "green" : "red"
+        ctx.fillStyle = (result === "Попал!") ? "blue" : "red"
     }
 
     {   //drawing dot
@@ -14,18 +14,4 @@ function drawDot(x, y, r, result){
         ctx.fill();
         ctx.closePath();
     }
-}
-
-function drawAllDots(){
-    const resultTable = document.getElementById("tbody-id");
-    const rows = resultTable.querySelectorAll("tr");
-    rows.forEach((row) => {
-        const cells = row.querySelectorAll("td");
-        const x = cells[0].textContent;
-        const y = cells[1].textContent;
-        const r = cells[2].textContent;
-        const result = cells[3].textContent;
-
-        drawDot(x, y, r, result);
-    });
 }

@@ -10,23 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f882b485-adc2-47a4-9cc5-002f5e70e340" name="Changes" comment="half work">
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/ifmo/filter/AreaCheckFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/ifmo/model/UserPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/scripts/drawDot.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/scripts/drawGraph.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/scripts/handleClickGraph.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/scripts/redrawGraph.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/result.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/scripts/manageDots.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/ifmo/controller/ControllerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/ifmo/controller/ControllerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/ifmo/model/AreaCheckServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/ifmo/model/AreaCheckServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/scripts/addResultToTable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/scripts/changeGIF.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/scripts/clean.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/scripts/clean.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/scripts/draw.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/scripts/handleRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/scripts/handleRequest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/scripts/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/scripts/validate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/scripts/drawDot.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/scripts/drawDot.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/styles/result.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/styles/result.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +188,7 @@
       <workItem from="1707130524024" duration="694000" />
       <workItem from="1707131255926" duration="4346000" />
       <workItem from="1707172789648" duration="3208000" />
-      <workItem from="1707203721916" duration="8659000" />
+      <workItem from="1707203721916" duration="13138000" />
     </task>
     <task id="LOCAL-00001" summary="half work">
       <created>1700472142192</created>
@@ -230,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702739505614</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="half work">
+      <created>1707220400293</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707220400293</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

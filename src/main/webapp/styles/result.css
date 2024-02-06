@@ -1,7 +1,9 @@
-.hit-table-block {
+#hit-table-block-id {
     margin: auto;
     padding: 15px;
     position: absolute;
+    left: 100px;
+    top: 50px;
     font-weight: bold;
     font-family: Times, Times New Roman, serif;
     color: black;
@@ -10,11 +12,6 @@
 .hit-table-block .hit-table .hit-thead, .hit-table-block .hit-table .hit-tbody tr, .hit-table-block .hit-table th, .hit-table-block .hit-table td {
     border: 5px black solid;
     padding: 12px;
-}
-
-.hit-table-block {
-    left: 100px;
-    top: 160px;
 }
 
 .hit-table-block .hit-table {
@@ -38,15 +35,14 @@
     border-radius: 10px;
 }
 
-.href-block {
+#href-block-id {
     margin: auto;
     position: absolute;
-    left: 100px;
-    top: 250px;
+    left: 200px;
+    bottom: 200px;
 }
 
 .href-block .href {
-    display: inline-block;
     border: 1px black solid;
     border-radius: 5px;
     background-color: #fff;
