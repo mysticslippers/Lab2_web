@@ -10,13 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f882b485-adc2-47a4-9cc5-002f5e70e340" name="Changes" comment="done">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/scripts/changeGIF.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/js/scripts/drawDot.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/scripts/drawDot.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/scripts/drawGraph.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/scripts/drawGraph.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/scripts/handleClickGraph.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/scripts/handleClickGraph.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/result.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/styles/result.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/styles/result.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,6 +148,20 @@
         </option>
       </method>
     </configuration>
+    <configuration default="true" type="JBossConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings>
+        <option name="SERVER" value="" />
+        <option name="BINDING_SET_NAME" value="" />
+        <option name="DOMAIN" value="false" />
+        <option name="SERVER_GROUP" value="" />
+        <option name="USERNAME" value="" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="JBoss" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -182,7 +191,8 @@
       <workItem from="1707230564962" duration="244000" />
       <workItem from="1707379514980" duration="2117000" />
       <workItem from="1707382187702" duration="709000" />
-      <workItem from="1707382974063" duration="2655000" />
+      <workItem from="1707382974063" duration="2978000" />
+      <workItem from="1707386831732" duration="306000" />
     </task>
     <task id="LOCAL-00001" summary="half work">
       <created>1700472142192</created>
@@ -233,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707383112369</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="done">
+      <created>1707385835323</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1707385835323</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
