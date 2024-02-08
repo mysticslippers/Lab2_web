@@ -4,7 +4,7 @@ function drawDot(x, y, r, result){
     const step = 20;
 
     {   //ctx config for dots
-        ctx.fillStyle = (result === "Попал!") ? "blue" : "red"
+        ctx.fillStyle = (result === "Попал!") ? "green" : "red"
     }
 
     {   //drawing dot

@@ -3,7 +3,7 @@
     padding: 15px;
     position: absolute;
     left: 100px;
-    top: 50px;
+    top: 100px;
     font-weight: bold;
     font-family: Times, Times New Roman, serif;
     color: black;
@@ -39,7 +39,7 @@
     margin: auto;
     position: absolute;
     left: 200px;
-    bottom: 200px;
+    top: 300px;
 }
 
 .href-block .href {

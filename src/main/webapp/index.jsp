@@ -129,5 +129,6 @@
 </footer>
 <script src="js/scripts/redrawGraph.js" type="text/javascript"></script>
 <script src="js/scripts/manageDots.js" type="text/javascript"></script>
+<script src="js/scripts/handleClickGraph.js" type="text/javascript"></script>
 </body>
 </html>

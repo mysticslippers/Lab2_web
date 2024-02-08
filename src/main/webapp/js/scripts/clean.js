@@ -3,13 +3,13 @@ function clean(){
     while(resultTable.firstChild){
         resultTable.removeChild(resultTable.firstChild);
     }
-    drawGraph(null);
     sendClearRequest();
+    drawGraph(null);
 }
 
 function sendClearRequest(){
     const url = '/Lab2_web/controller?'
     const params = new URLSearchParams();
-    params.append("mode", "Clear data!");
+    params.append("mode", "clean");
     window.location = url + params.toString();
 }

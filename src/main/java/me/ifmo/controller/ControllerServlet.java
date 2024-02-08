@@ -8,6 +8,7 @@ import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 import java.util.LinkedList;
+import java.util.Objects;
 
 @WebServlet(name = "ControllerServlet", value = "/controller")
 public class ControllerServlet extends HttpServlet{
@@ -23,7 +24,7 @@ public class ControllerServlet extends HttpServlet{
         String mode = request.getParameter("mode");
 
 
-        if(mode == null){
+        if(!Objects.equals(mode, "clean")){
             if(session.getAttribute("results") == null) session.setAttribute("results", new LinkedList<String>());
             if(xRaw != null && yRaw != null && rRaw != null){
                 session.setAttribute("x-input", xRaw);
