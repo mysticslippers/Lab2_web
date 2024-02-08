@@ -1,15 +1,14 @@
 const canvas = document.getElementById("canvas");
-const rInput = document.getElementById("r-input-choice");
 
 canvas.addEventListener("mousedown", function (event){
     if(isValidR(rInput)){
-        let rValue = (rInput.value).toFixed(2);
+        let rValue = (rInput.value)
         const mousePosition = getMousePosition(canvas, event);
 
-        const x = (mousePosition.xValue - 200) / (40 * rValue / 5);
-        const y = (200 - mousePosition.yValue) / (40 * rValue / 5);
+        const x = ((mousePosition.xValue - 200) / (20 * rValue / 5)).toFixed(2);
+        const y = ((200 - mousePosition.yValue) / (20 * rValue / 5)).toFixed(2);
 
-        console.log(x, y);
+        sendSyncRequest(x, y, rValue);
     }
 });
 

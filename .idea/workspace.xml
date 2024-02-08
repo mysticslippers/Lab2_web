@@ -9,16 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f882b485-adc2-47a4-9cc5-002f5e70e340" name="Changes" comment="drawing dots">
+    <list default="true" id="f882b485-adc2-47a4-9cc5-002f5e70e340" name="Changes" comment="done">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/scripts/changeGIF.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/ifmo/controller/ControllerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/ifmo/controller/ControllerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/scripts/clean.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/scripts/clean.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/js/scripts/drawDot.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/scripts/drawDot.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/js/scripts/drawGraph.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/scripts/drawGraph.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/js/scripts/handleClickGraph.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/scripts/handleClickGraph.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/scripts/handleRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/scripts/handleRequest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/scripts/redrawGraph.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/scripts/redrawGraph.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/result.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/styles/result.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/styles/result.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -185,6 +182,7 @@
       <workItem from="1707230564962" duration="244000" />
       <workItem from="1707379514980" duration="2117000" />
       <workItem from="1707382187702" duration="709000" />
+      <workItem from="1707382974063" duration="2655000" />
     </task>
     <task id="LOCAL-00001" summary="half work">
       <created>1700472142192</created>
@@ -228,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707228088075</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="done">
+      <created>1707383112369</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1707383112369</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,7 +253,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="half work" />
     <MESSAGE value="drawing dots" />
-    <option name="LAST_COMMIT_MESSAGE" value="drawing dots" />
+    <MESSAGE value="done" />
+    <option name="LAST_COMMIT_MESSAGE" value="done" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

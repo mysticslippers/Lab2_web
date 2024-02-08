@@ -38,7 +38,7 @@
                 <td>
                     <%= userPoint.getR()%>
                 </td>
-                <td>
+                <td id="td-result-id">
                     <%= userPoint.getHit()%>
                 </td>
                 <td>

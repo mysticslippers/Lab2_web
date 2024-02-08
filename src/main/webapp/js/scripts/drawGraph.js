@@ -3,8 +3,8 @@ function drawGraph(r){
     const ctx = canvas.getContext("2d");
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     const step = 50;
-    let rValue = (r !== null) ? r.toFixed(2) : "R";
-    let rHalfValue = (r !== null) ? (r / 2).toFixed(2) : "R / 2";
+    let rValue = (r !== null) ? r : "R";
+    let rHalfValue = (r !== null) ? r / 2 : "R / 2";
 
     {   //ctx config for parts
         ctx.strokeStyle = "#00BFFF";
